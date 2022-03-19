@@ -1,0 +1,131 @@
+body {
+    background-color: white;
+}
+#contenedor {
+    grid-area: contenedor;   
+    background-color: white;
+}
+#header {
+    grid-area: header;
+    background-color: #336699;
+    height: 100px;
+    text-align: center;
+    font-size: 1rem;
+}
+#nav {
+    grid-area: nav;
+    background-color: #336699;
+    height: 70px;
+}
+.menu, li, a {
+ display: inline-block;
+ color: black;
+    text-decoration: none;
+    border-radius: 20%;
+    font-size: 1rem;
+    margin-right: 10px;
+}
+.menu a {
+    background-color: #ffcc66;
+    padding: 10px;
+}
+#formulario {
+    margin-top: 50px;
+    grid-area: formulario;
+    background-color: #003366;
+    display: flexbox;
+}
+#form {
+    margin-top: 70px;
+    margin-left: 180px;
+    width: 400px;
+    height: 400px;
+    border-radius: 20px;
+    background-color: #ffcc66;
+}
+#formulario, label {
+    color: black;
+    }
+#correo, #contraseña {
+    color: white;
+    height: 30px;
+    width: 350px;
+    border-color: #003366;    
+    border-bottom-color: #ffcc66;
+    border-style: solid;
+    border-width: 5px;
+    background-color: #003366;
+}
+#continuar {
+    color: white;
+    margin-left: 100px;
+    height: 30px;
+    width: 150px;
+    background-color: #003366;
+border-radius: 40px;
+}
+#registrarse {
+    margin-top: 10px;
+    color: white;
+    margin-left: 100px;
+    height: 30px;
+    width: 150px;
+    background-color: #003366;
+    border-radius: 40px;
+}
+#imagen {
+    grid-area: imagen;
+    background-color: yellow;
+}
+#footer {
+    grid-area: footer;
+    height: 280px;
+    background-color: #336699;
+    text-align: center;
+}
+#footer, strong {
+    font-size: 2rem;
+    color: white;
+}
+.footer img {
+    border-radius: 50%;
+}
+#footer a {
+        color: #ffcc66;
+}
+#contenedor {
+    height: 1200px;
+    grid-gap: 20px  ;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 3% 4% 50% 20%;
+    grid-template-areas:
+    "header header header header header"
+    "nav nav nav nav nav"
+    "formulario formulario formulario imagen imagen"
+    "footer footer footer footer footer";
+}
+@media screen and (max-width: 1000px) {
+    #contenedor {
+     grid-template-columns: 1fr 1fr 1fr 1fr;
+     grid-template-rows: 1fr 1fr 1fr 1fr;
+     grid-template-areas: 
+     "header header header header"
+     "nav nav nav nav"
+     "formulario formulario imagen imagen"
+     "footer footer footer footer";
+    }
+}
+@media screen and (max-width: 768px) {
+        #contenedor {
+            grid-template-columns: 1fr;
+            grid-template-rows: 3% 1fr 1fr 1fr 1fr;
+            grid-template-areas: 
+            "header"
+            "nav"
+            "formulario"
+            "imagen"
+            "footer";
+        }
+}
+ 

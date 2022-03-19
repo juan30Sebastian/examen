@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ES">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrar o registrarse</title>
+    <link href="formulario.css.css" rel="stylesheet" tupe="text/css">
+</head>
+<body>
+<div id="contenedor">
+    <div id="header">
+        <h1>ISSAC ASIMOV</h1>
+    </div>
+    <div id="nav">
+<nav class="menu">
+<ul>
+<li><a href="index.html">INICIO</a></li>
+<li><a href="#">SOBRE NOSOTROS</a></li>
+<li><a href="#">CONTÁCTANOS</a></li>
+<li><a href="#">BLOG</a></li>
+<li><a href="#">LOGIN</a></li>
+</ul>
+</nav>
+</div>
+<div id="formulario">
+<script>
+function usrpas(){
+if (document.form1.txt.value=="juansebastiantobar30@gmail.com" && document.form1.num.value=="juansebastian"){window.location="bienvenido.html ";return}
+if (document.form1.txt.value=="josias.v.b144@gmail.com" && document.form1.num.value=="josias.v.b144"){window.location="bienvenido.html";return}
+if (document.form1.txt.value=="admin3" && document.form1.num.value=="1324"){window.location="pagina.htm";return}
+ 
+else {alert("Error en Usuario o Contraseña. Intenta de nuevo.")}
+}
+document.oncontextmenu=new Function("return false");
+</script>
+<form name="form1" id="form">
+<label>Correo electrónico: <br><input type="text" name="txt" id="correo"></label> <br>
+<label>Contraseña: <br><input type="password" name="num" id="contraseña"></label> <br>
+<input type="button" value="CONTINUAR" onclick="usrpas()" id="continuar">
+</form>
+</div>
+<div id="imagen">
+    <img src="buho.jpg">
+</div>
+<div id="footer">
+    <footer>
+    <strong>Síguenos en:</strong>
+    <nav class="footer">
+    <ul>
+        <li><a href="https://www.facebook.com"><img src="facebook.png.png" alt="facebook" width="50" height="50"></a></li>
+    <li><a href="https://www.instagram.com"><img src="instagram.png.png" alt="ínstagram" width="50" height="50"></a></li>
+    <li><a href="https://www.youtube.com/?hl=ES"><img src="yuotube.png.png" alt="yuotube" width="50" height="50"></a></li>
+    </ul>
+    </nav>
+    <a href="copyright">COPYRIGHT</a>
+<br>
+    <A href="TERMINOSYCONDICIONES">TÉRMINOS Y CONDICIONES</A>    
+    </footer>
+</div>
+</div>
+</div>
+</body>
+</html>
